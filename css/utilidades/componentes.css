@@ -1,3 +1,13 @@
+/* Container */
+.container{
+  box-sizing: border-box;
+  max-width: 75rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* Botão */
 
 .botao {
@@ -22,3 +32,5 @@
     font-size: 1rem;
   }
 }
+
+

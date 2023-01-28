@@ -9,10 +9,8 @@
   justify-content: space-between;
   box-sizing: border-box; /* Não soma o valor do padding ao valor colocado no max-width */
   align-items: center;
-  padding: 1.25rem;
-  max-width: 75rem; /* Tamanho máximo que o container irá crescer */
-  margin-left: auto;
-  margin-right: auto;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 
 .header-menu {
