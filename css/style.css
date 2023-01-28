@@ -1,90 +1,9 @@
-/* Estilos gerais*/
+@import "./global/global.css";
+@import "./utilidades/tipografia.css";
+@import "./utilidades/cores.css";
 
-body{
-  margin: 0px;
-  font-family: Arial, Helvetica, sans-serif;
-}
+@import "./global/header.css";
 
-ul{
-  margin: 0px;
-  padding: 0px;
-  list-style: none;
-}
-
-a{
-  text-decoration: none;
-}
-
-/* Estilos Específicos */
-.header-bg{
-  background-color: #000;
-}
-
-.header{
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.25rem;
-  justify-content: space-between;
-  box-sizing: border-box; /* Não soma o valor do padding ao valor colocado no max-width */
-  align-items: center;
-  padding: 1.25rem;
-  max-width: 75rem; /* Tamanho máximo que o container irá crescer */
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.header-menu{
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2.5rem;
-}
-
-.header-menu a{
-  color: #fff;
-  display: inline-block; /* Para que o padding funcione corretamente quando houver quebra dos elementos */
-  padding: 1rem 0rem;
-  font-size: 1.125rem;
-  position: relative;
-}
-
-.header-menu a:after{
-  content: '';
-  display: block;
-  height: 2px;
-  width: 0px;
-  background: #fff;
-  margin-top: 4px;
-  transition: 0.3s;
-  position: absolute;
-}
-
-.header-menu a:hover:after{
-  width: 100%;
-}
-
-@media (max-width: 800px){
-  .header-menu{
-    gap: 1.25rem;
-  }
-  .header-menu a{
-    background: #111;
-    padding: 0.75rem 1rem;
-    border-radius: 4px;
-  }
-    .header-menu a:hover{
-      background: #2E2E2E;
-    }
-  .header-menu a:after{
-    display: none;
-  }
-}
-
-@media (max-width: 600px){
-  .header-menu{
-    gap: 0.75rem;
-  }
-  .header-menu a{
-    padding: 0.5rem 0.75rem;
-    font-size: 0.875rem;
-  }
-}
+/* Home */
+@import "./home/introducao.css";
+@import "./utilidades/componentes.css";
